@@ -1,8 +1,8 @@
 import { describe, expect, it } from "vitest";
-import { exampleFunction } from "./index";
+import { getDigitalGoodsService } from "./index";
 
-describe("exampleFunction", () => {
+describe("getDigitalGoodsService", () => {
   it("should be a function", () => {
-    expect(typeof exampleFunction).toBe("function");
+    expect(typeof getDigitalGoodsService).toBe("function");
   });
 });
