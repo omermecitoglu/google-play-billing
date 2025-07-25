@@ -1,9 +1,24 @@
 import type { DigitalGoodsService } from "~/types/service";
 
+/**
+ * Retrieves the list of purchases from the digital goods service.
+ *
+ * @param service - The digital goods service instance.
+ * @returns Array of purchase details.
+ */
 export function getPurchases(service: DigitalGoodsService) {
   return service.listPurchases();
 }
 
+/**
+ * Initiates a payment request for a digital goods item and handles purchase completion.
+ *
+ * @param service - The digital goods service instance.
+ * @param itemId - The ID of the item to purchase.
+ * @param consume - Whether to consume the purchase after completion.
+ * @param backendOperation - Optional backend operation to validate the purchase.
+ * @returns Payment result: "SUCCESS", "FAILED", or "CANCELED_BY_THE_USER".
+ */
 export async function requestPayment(
   service: DigitalGoodsService,
   itemId: string,
