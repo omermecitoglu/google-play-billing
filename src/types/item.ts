@@ -1,19 +1,15 @@
+import type { Price } from "./price";
+
 export type ItemDetails = {
   itemId: string,
   title: string,
-  price: {
-    currency: string,
-    value: string,
-  },
+  price: Price,
   type: "product" | "subscription",
   description: string,
   iconURLs: string[],
   subscriptionPeriod: "P1M" | "P1Y",
   freeTrialPeriod: string,
-  introductoryPrice: {
-    currency: string,
-    value: string,
-  },
+  introductoryPrice: Price,
   introductoryPricePeriod: string,
   introductoryPriceCycles: unknown, // [EnforceRange] unsigned long long introductoryPriceCycles;
 };
