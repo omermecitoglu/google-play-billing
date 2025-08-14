@@ -41,13 +41,13 @@
     "build": "tsup"
   },
   "devDependencies": {
-    "@omer-x/eslint-config": "^2.1.3",
-    "@types/node": "^24.1.0",
+    "@omer-x/eslint-config": "^2.1.4",
+    "@types/node": "^24.2.1",
     "@vitest/coverage-v8": "^3.2.4",
-    "eslint": "^9.31.0",
+    "eslint": "^9.33.0",
     "jsdom": "^26.1.0",
     "tsup": "^8.5.0",
-    "typescript": "^5.8.3",
+    "typescript": "^5.9.2",
     "vitest": "^3.2.4"
   }
 }
